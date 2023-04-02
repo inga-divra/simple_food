@@ -8,7 +8,7 @@ body {
 }
 
 section {
-    padding-bottom: 120px;
+    padding: 120px 0;
 }
 
 .container {
@@ -21,6 +21,11 @@ section {
     display: block;
 }
 
+.global-link {
+    color: $darkBlue-900;
+    text-decoration: underline;
+}
+
 .btn {
     font-size: 18px;
     padding: 12px 32px;
@@ -31,7 +36,6 @@ section {
     &--filter {
         display: flex;
         align-items: center;
-        font-size: 20px;
         padding: 22px 32px;
         border-radius: 5px;
         color: $dark;
@@ -41,10 +45,16 @@ section {
         &.current {
             color: $neutral;
             background-color: $orange-900;
+            box-shadow: none;
 
-            .category-filter__icon {
+            .category__filter-icon {
                 fill: $neutral;
             }
+        }
+
+        &--product {
+            font-size: 14px;
+            padding: 7px 16px;
         }
     }
 }
@@ -54,4 +64,17 @@ section {
     font-size: 36px;
     text-align: center;
     margin-bottom: 60px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }

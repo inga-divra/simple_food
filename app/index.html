@@ -35,14 +35,22 @@
                 </ul>
             </nav>
             <div class="user-nav">
-                <a class="user-nav__link" href=""></a>
                 <a class="user-nav__link" href="">
-                    4
+                    <svg class="user-nav__icon" width="19" height="19">
+                        <use href="./images/symbol-defs.svg#icon-search"></use>
+                    </svg>
+                </a>
+
+                <a class="user-nav__link" href="#">
+                    <svg class="user-nav__icon" width="19" height="19">
+                        <use href="./images/symbol-defs.svg#icon-cart"></use>
+                    </svg>
+                    <span class="user-nav__number">4</span>
                 </a>
             </div>
         </div>
     </header>
-    <main>
+    <main class="main">
         <section class="hero">
             <div class="container hero__container">
                 <div class="hero__content">
@@ -264,40 +272,55 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer-top__row">
+                <address class="address">
                     <ul class="footer-top__list">
-                        <li class="footer-top__item">
-                            <a class="footer-top__link" href="#">
+                        <li class="footer-top__item address__item">
+                            <a class="footer-top__link address__link" href="#">
+                                <svg class="address__icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-location"></use>
+                                </svg>
                                 3021 Marion Drive
                             </a>
                         </li>
-                        <li class="footer-top__item">
-                            <a class="footer-top__link" href="#">
+                        <li class="footer-top__item address__item">
+                            <a class="footer-top__link address__link" href="#">
+                                <svg class="address__icon" width="15" height="18">
+                                    <use href="./images/symbol-defs.svg#icon-calling"></use>
+                                </svg>
                                 380501112233
                             </a>
                         </li>
-                        <li class="footer-top__item">
-                            <a class="footer-top__link" href="#">
+                        <li class="footer-top__item address__item">
+                            <a class="footer-top__link address__link" href="#">
+                                <svg class="address__icon" width="20" height="18">
+                                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                                </svg>
                                 support@sfood.com
                             </a>
                         </li>
-                        <li class="footer-top__item">
-                            <a class="footer-top__link" href="#">
-                                Site map
+                        <li class="footer-top__item address__item">
+                            <a class="footer-top__link footer-top__link--social" href="#">
+                                <svg class="footer-top__icon" width="10" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
                             </a>
-                            <a class="footer-top__link" href="#">
-                                Site map
+                            <a class="footer-top__link footer-top__link--social" href="#">
+                                <svg class="footer-top__icon" width="20" height="17">
+                                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
                             </a>
-                            <a class="footer-top__link" href="#">
-                                Site map
+                            <a class="footer-top__link footer-top__link--social" href="#">
+                                <svg class="footer-top__icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-insta"></use>
+                                </svg>
                             </a>
                         </li>
                     </ul>
-                </div>
+                </address>
             </div>
             <div class="footer-bottom">
                 <p class="footer-bottom_text">
-                    Simple food
+                    &copy; <span id="date"></span> Simple food
                 </p>
             </div>
         </div>

@@ -73,7 +73,7 @@
                 <h2 class="title">Popular categories</h2>
                 <ul class="category__filter">
                     <li class="category__filter-item">
-                        <button class="btn--filter current" type="button">
+                        <button class="btn--filter current " type="button" data-filter="all">
                             <svg class="category__filter-icon" width="44" height="44">
                                 <use href="./images/symbol-defs.svg#icon-burger"></use>
                             </svg>
@@ -81,7 +81,7 @@
                         </button>
                     </li>
                     <li class="category__filter-item">
-                        <button class="btn--filter" type="button">
+                        <button class="btn--filter" type="button" data-filter=".category-b">
                             <svg class="category__filter-icon" width="44" height="44">
                                 <use href="./images/symbol-defs.svg#icon-pizza"></use>
                             </svg>
@@ -89,7 +89,7 @@
                         </button>
                     </li>
                     <li class="category__filter-item">
-                        <button class="btn--filter" type="button">
+                        <button class="btn--filter" type="button" data-filter=".category-c">
                             <svg class="category__filter-icon" width="44" height="44">
                                 <use href="./images/symbol-defs.svg#icon-sandwich"></use>
                             </svg>
@@ -97,7 +97,7 @@
                         </button>
                     </li>
                     <li class="category__filter-item">
-                        <button class="btn--filter" type="button">
+                        <button class="btn--filter" type="button" data-filter=".category-d">
                             <svg class="category__filter-icon" width="44" height="44">
                                 <use href="./images/symbol-defs.svg#icon-asian"></use>
                             </svg>
@@ -105,7 +105,7 @@
                         </button>
                     </li>
                     <li class="category__filter-item">
-                        <button class="btn--filter" type="button">
+                        <button class="btn--filter" type="button" data-filter=".category-e">
                             <svg class="category__filter-icon" width="44" height="44">
                                 <use href="./images/symbol-defs.svg#icon-dish"></use>
                             </svg>
@@ -113,68 +113,68 @@
                         </button>
                     </li>
                 </ul>
-                <ul class="category__list">
-                    <li class="category__item">
+                <div class="category__list">
+                    <article class="category__item mix category-a">
                         <img class="category__img" src="./images/catalog/item_01.png" alt="" width="140" height="140">
-                        <p class="category__desc">Cheeseburger with lettuce</p>
+                        <h2 class="category__desc">Cheeseburger with lettuce</h2>
                         <span class="category__price">7.50 €</span>
                         <button class="btn btn--product" type="button">Add to cart</button>
-                    </li>
-                    <li class="category__item">
+                    </article>
+                    <article class="category__item mix category-a">
                         <img class="category__img" src="./images/catalog/item_02.png" alt="" width="140" height="140">
-                        <p class="category__desc">Hamburger</p>
+                        <h2 class="category__desc">Hamburger</h2>
                         <span class="category__price">6.99 €</span>
                         <button class="btn btn--product" type="button">Add to cart</button>
-                    </li>
-                    <li class="category__item">
+                    </article>
+                    <article class="category__item mix category-b">
                         <img class="category__img" src="./images/catalog/item_03.png" alt="" width="140" height="140">
-                        <p class="category__desc">Royal cheeseburger</p>
+                        <h2 class="category__desc">Royal cheeseburger</h2>
                         <span class="category__price">5 €</span>
                         <button class="btn btn--product" type="button">Add to cart</button>
-                    </li>
-                    <li class="category__item">
+                    </article>
+                    <article class="category__item mix category-b">
                         <img class="category__img" src="./images/catalog/item_04.png" alt="" width="140" height="140">
-                        <p class="category__desc">Black hamburger</p>
+                        <h2 class="category__desc">Black hamburger</h2>
                         <span class="category__price">8.55 €</span>
                         <button class="btn btn--product" type="button">Add to cart</button>
-                    </li>
-                    <li class="category__item">
+                    </article>
+                    <article class="category__item mix category-b">
                         <img class="category__img" src="./images/catalog/item_05.png" alt="" width="140" height="140">
-                        <p class="category__desc">Chicken burger</p>
+                        <h2 class="category__desc">Chicken burger</h2>
                         <span class="category__price">2 €</span>
                         <button class="btn btn--product" type="button">Add to cart</button>
-                    </li>
-                    <li class="category__item">
+                    </article>
+                    <article class="category__item mix category-c">
                         <img class="category__img" src="./images/catalog/item_01.png" alt="" width="140" height="140">
-                        <p class="category__desc">Cheeseburger with lettuce</p>
+                        <h2 class="category__desc">Cheeseburger with lettuce</h2>
                         <span class="category__price">7.50 €</span>
                         <button class="btn btn--product" type="button">Add to cart</button>
-                    </li>
-                    <li class="category__item">
+                    </article>
+                    <article class="category__item mix category-d">
                         <img class="category__img" src="./images/catalog/item_02.png" alt="" width="140" height="140">
-                        <p class="category__desc">Hamburger</p>
+                        <h2 class="category__desc">Hamburger</h2>
                         <span class="category__price">6.99 €</span>
                         <button class="btn btn--product" type="button">Add to cart</button>
-                    </li>
-                    <li class="category__item">
+                    </article>
+                    <article class="category__item mix category-d">
                         <img class="category__img" src="./images/catalog/item_03.png" alt="" width="140" height="140">
-                        <p class="category__desc">Royal cheeseburger</p>
+                        <h2 class="category__desc">Royal cheeseburger</h2>
                         <span class="category__price">5 €</span>
                         <button class="btn btn--product" type="button">Add to cart</button>
-                    </li>
-                    <li class="category__item">
+                    </article>
+                    <article class="category__item mix category-e">
                         <img class="category__img" src="./images/catalog/item_04.png" alt="" width="140" height="140">
-                        <p class="category__desc">Black hamburger</p>
+                        <h2 class="category__desc">Black hamburger</h2>
                         <span class="category__price">8.55 €</span>
                         <button class="btn btn--product" type="button">Add to cart</button>
-                    </li>
-                    <li class="category__item">
+                    </article>
+                    <article class="category__item mix category-c">
                         <img class="category__img" src="./images/catalog/item_05.png" alt="" width="140" height="140">
-                        <p class="category__desc">Chicken burger</p>
+                        <h2 class="category__desc">Chicken burger</h2>
                         <span class="category__price">2 €</span>
                         <button class="btn btn--product" type="button">Add to cart</button>
-                    </li>
-                </ul>
+                    </article>
+                </div>
                 <a class="category__link global-link " href="#">Show more</a>
             </div>
         </section>
@@ -279,7 +279,7 @@
                                 <svg class="address__icon" width="20" height="20">
                                     <use href="./images/symbol-defs.svg#icon-location"></use>
                                 </svg>
-                                3021 Marion Drive
+                                str. Marion Drive
                             </a>
                         </li>
                         <li class="footer-top__item address__item">
@@ -325,6 +325,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mixitup.min.js"></script>
     <script src="./js/main.min.js"></script>
 </body>
 

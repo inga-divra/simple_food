@@ -1,0 +1,59 @@
+.category {
+    padding-top: 0;
+
+    &__filter {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 45px;
+    }
+
+    &__filter-icon {
+        margin-right: 10px;
+        fill: $darkBlue-900;
+    }
+
+    &__list {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $neutral;
+        padding: 20px 15px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 0px 1px $silver-200;
+    }
+
+    &__item-btn {
+        font-size: 14px;
+    }
+
+    &__img {
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        font-size: 15px;
+        line-height: 1.2;
+
+    }
+
+    &__price {
+        color: $darkBlue-900;
+        font-weight: 500;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        display: block;
+        text-align: center;
+    }
+}

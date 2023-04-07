@@ -14,10 +14,10 @@
 
 .menu {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-size: 18px;
     line-height: 1.2;
+    flex-grow: 1;
 
     &__list {
         display: flex;
@@ -50,6 +50,11 @@
         &:not(:last-child) {
             margin-right: 35px;
         }
+    }
+
+    &__icon {
+        fill: transparent;
+        stroke: $darkBlue-900;
     }
 
     &__number {

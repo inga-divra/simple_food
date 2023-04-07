@@ -7,9 +7,13 @@
         align-items: center;
     }
 
-    /*     &__content {
-        height: calc(100vh - 266px);
-    } */
+    &__content {
+        width: 100%;
+        padding: 156px 0;
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: contain;
+    }
 
     &__title {
         color: $darkBlue-900;

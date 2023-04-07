@@ -4,20 +4,19 @@
     &__container {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
     }
 
-    &__logo {
-        margin-right: 516px;
-    }
 }
 
 .menu {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-size: 18px;
     line-height: 1.2;
     flex-grow: 1;
+    margin-right: 62px;
 
     &__list {
         display: flex;

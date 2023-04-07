@@ -1,10 +1,17 @@
 .category {
     padding-top: 0;
+    text-align: center;
 
     &__filter {
         display: flex;
-        justify-content: space-between;
         margin-bottom: 45px;
+    }
+
+    &__filter-item {
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
     }
 
     &__filter-icon {
@@ -12,18 +19,12 @@
         fill: $darkBlue-900;
     }
 
-    &__list {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 30px;
-        margin-bottom: 60px;
-    }
-
     &__item {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        text-align: center;
         background-color: $neutral;
         padding: 20px 15px;
         border-radius: 5px;
@@ -41,7 +42,7 @@
     &__desc {
         font-size: 15px;
         line-height: 1.2;
-
+        margin-bottom: 10px;
     }
 
     &__price {
@@ -51,8 +52,4 @@
         margin-bottom: 10px;
     }
 
-    &__link {
-        display: block;
-        text-align: center;
-    }
 }

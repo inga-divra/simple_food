@@ -47,7 +47,7 @@
 
     &__price {
         color: $darkBlue-900;
-        font-weight: 500;
+        @extend %rubik-500;
         line-height: 1.4;
         margin-bottom: 10px;
     }

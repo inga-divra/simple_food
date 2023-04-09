@@ -18,7 +18,7 @@
     &__title {
         color: $darkBlue-900;
         font-size: 66px;
-        font-weight: 500;
+        @extend %rubik-500;
         text-transform: uppercase;
         margin-bottom: 20px;
     }

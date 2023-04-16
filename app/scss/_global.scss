@@ -37,36 +37,18 @@ body {
 }
 
 .btn {
-    font-size: 18px;
-    padding: 12px 32px;
     color: $neutral;
     background-color: $orange-900;
     border-radius: 6px;
+    font-size: 14px;
+    padding: 7px 16px;
 
-    &--filter {
-        display: flex;
-        align-items: center;
-        padding: 22px 32px;
-        border-radius: 5px;
-        color: $dark;
-        background-color: $neutral;
-        box-shadow: 0px 0px 0px 1px $gray;
 
-        &.current {
-            color: $neutral;
-            background-color: $orange-900;
-            box-shadow: none;
-
-            .category__filter-icon {
-                fill: $neutral;
-            }
-        }
-
-        &--product {
-            font-size: 14px;
-            padding: 7px 16px;
-        }
+    &--big {
+        font-size: 18px;
+        padding: 12px 32px;
     }
+
 }
 
 .title {
@@ -97,5 +79,36 @@ body {
 
     &--4points {
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: $neutral;
+    padding: 20px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 1px $silver-200;
+    cursor: pointer;
+
+    &__img {
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-size: 15px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    &__price,
+    &__currency {
+        color: $darkBlue-900;
+        @extend %rubik-500;
+        line-height: 1.4;
+        margin-bottom: 10px;
     }
 }

@@ -5,8 +5,9 @@
     }
 
     &__btn {
+        display: flex;
+        align-items: center;
         width: 200px;
-        width: 100%;
         padding: 13px 38px;
     }
 
@@ -18,7 +19,7 @@
     &__top {
         display: flex;
         padding-bottom: 65px;
-        border-bottom: 1px solid rgba($gray, 0.2);
+        //border-bottom: 1px solid rgba($gray, 0.2);
 
         &__icon {
             fill: $dark;
@@ -72,12 +73,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    &__line {
-        width: 100vw;
-        height: 10px;
-        color: red;
     }
 }
 

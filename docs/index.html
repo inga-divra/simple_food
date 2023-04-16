@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The official website of food delivery company Simple Food</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <link rel="manifest" href="./favicons/site.webmanifest">
+    <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <nav class="menu">
+                <a class="logo header__logo" href="">
+                    <img class="logo__img" src="./images/logo.svg" alt="logo of food delivery company Simple Food"
+                        width="200" height="39">
+                </a>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link current" href="index.html">Main</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Food</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-nav">
+                <span class="sr-only">type to search for a product-card</span>
+                <button class="user-nav__link" href="#" type="button">
+                    <svg class="user-nav__icon" width="19" height="19">
+                        <use href="./images/symbol-defs.svg#icon-search"></use>
+                    </svg>
+                </button>
+                <button class="user-nav__link" href="#" type="button">
+                    <span class="sr-only">go to your shopping cart</span>
+                    <svg class="user-nav__icon" width="19" height="19">
+                        <use href="./images/symbol-defs.svg#icon-cart"></use>
+                    </svg>
+                    <span class="user-nav__number">4</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero section">
+            <div class="container hero__container">
+                <div class="hero__content" style="background-image: url('./images/scooter-guy.jpg');">
+                    <h1 class="sr-only">Fresh meals quickly delivered to you - Simple Food delivery</h1>
+                    <h2 class="hero__title">Delevery
+                        <span class="hero__subtitle">in 15 minutes</span>
+                    </h2>
+                    <p class="hero__text">
+                        The fastest food delivery in your city. If there is delay beyond 30 minutes in delivering, the
+                        food will be given free.
+                    </p>
+                    <div class="hero__links">
+                        <a class="btn btn--big hero__link">Order now</a>
+                        <a class="global-link hero__link" href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="category section">
+            <div class="container">
+                <h2 class="title">Popular categories</h2>
+                <ul class="category__filter">
+                    <li class="category__filter-item">
+                        <button class="category__filter-btn" type="button" data-filter="all">
+                            <svg class="category__filter-icon" width="44" height="44">
+                                <use href="./images/symbol-defs.svg#icon-burger"></use>
+                            </svg>
+                            Hamburger
+                        </button>
+                    </li>
+                    <li class="category__filter-item">
+                        <button class="category__filter-btn" type="button" data-filter=".category-b">
+                            <svg class="category__filter-icon" width="44" height="44">
+                                <use href="./images/symbol-defs.svg#icon-pizza"></use>
+                            </svg>
+                            Pizza
+                        </button>
+                    </li>
+                    <li class="category__filter-item">
+                        <button class="category__filter-btn" type="button" data-filter=".category-c">
+                            <svg class="category__filter-icon" width="44" height="44">
+                                <use href="./images/symbol-defs.svg#icon-sandwich"></use>
+                            </svg>
+                            Sandwich
+                        </button>
+                    </li>
+                    <li class="category__filter-item">
+                        <button class="category__filter-btn" type="button" data-filter=".category-d">
+                            <svg class="category__filter-icon" width="44" height="44">
+                                <use href="./images/symbol-defs.svg#icon-asian"></use>
+                            </svg>
+                            Asian cuisine
+                        </button>
+                    </li>
+                    <li class="category__filter-item">
+                        <button class="category__filter-btn" type="button" data-filter=".category-e ">
+                            <svg class="category__filter-icon" width="44" height="44">
+                                <use href="./images/symbol-defs.svg#icon-dish"></use>
+                            </svg>
+                            Sets
+                        </button>
+                    </li>
+                </ul>
+                <ul class="category__list grid">
+                    <li class="category__item mix category-a">
+                        <article class="product-card">
+                            <img class="product-card__img" src="./images/catalog/item_01.jpg"
+                                alt="Cheeseburger with lettuce and tomato" width="140" height="140">
+                            <h3 class="product-card__title">Cheeseburger with lettuce</h3>
+                            <span class="product-card__price">
+                                7.50
+                                <span class="product-card__currency">
+                                    €
+                                </span>
+                            </span>
+                            <button class="btn btn--product" type="button">Add to cart</button>
+                        </article>
+                    </li>
+                    <li class="category__item mix category-a">
+                        <article class="product-card">
+                            <img class="product-card__img" src="./images/catalog/item_02.jpg"
+                                alt="Beef burger on a eeded bun with lettuce, tomato and red onion" width="140"
+                                height="140">
+                            <h3 class="product-card__title">Beef burger</h3>
+                            <span class="product-card__price">
+                                6.99
+                                <span class="product-card__currency">
+                                    €
+                                </span>
+                            </span>
+                            <button class="btn btn--product" type="button">Add to cart</button>
+                        </article>
+                    </li>
+                    <li class="category__item mix category-b">
+                        <article class="product-card">
+                            <img class="product-card__img" src="./images/catalog/item_03.jpg"
+                                alt="Royal cheeseburger with cheddar cheese, a large beef patty, onions, pickles, mustard and ketchup on a caramelized bun with sesame"
+                                width="140" height="140">
+                            <h3 class="product-card__title">Royal cheeseburger</h3>
+                            <span class="product-card__price">
+                                5
+                                <span class="product-card__currency">
+                                    €
+                                </span>
+                            </span>
+                            <button class="btn btn--product" type="button">Add to cart</button>
+                        </article>
+                    </li>
+                    <li class="category__item mix category-b">
+                        <article class="product-card">
+                            <img class="product-card__img" src="./images/catalog/item_04.jpg"
+                                alt="Black big hamburger with cheddar cheese, a large beef patty and paprika"
+                                width="140" height="140">
+                            <h3 class="product-card__title">Black hamburger</h3>
+                            <span class="product-card__price">
+                                8.55
+                                <span class="product-card__currency">
+                                    €
+                                </span>
+                            </span>
+                            <button class="btn btn--product" type="button">Add to cart</button>
+                        </article>
+                    </li>
+                    <li class="category__item mix category-b">
+                        <article class="product-card">
+                            <img class="product-card__img" src="./images/catalog/item_05.jpg"
+                                alt="Crispy chicken burger with honey mustard coleslaw" width="140" height="140">
+                            <h3 class="product-card__title">Chicken burger</h3>
+                            <span class="product-card__price">
+                                2
+                                <span class="product-card__currency">
+                                    €
+                                </span>
+                            </span>
+                            <button class="btn btn--product" type="button">Add to cart</button>
+                        </article>
+                    </li>
+                    <li class="category__item mix category-c">
+                        <article class="product-card">
+                            <img class="product-card__img" src="./images/catalog/item_01.jpg"
+                                alt="cheeseburger with lettuce and tomato" width="140" height="140">
+                            <h3 class="product-card__title">Cheeseburger with lettuce</h3>
+                            <span class="product-card__price">
+                                7.50
+                                <span class="product-card__currency">
+                                    €
+                                </span>
+                            </span>
+                            <button class="btn btn--product" type="button">Add to cart</button>
+                        </article>
+                    </li>
+                    <li class="category__item mix category-d">
+                        <article class="product-card">
+                            <img class="product-card__img" src="./images/catalog/item_02.jpg"
+                                alt="Beef burger on a eeded bun with lettuce, tomato and red onion" width="140"
+                                height="140">
+                            <h3 class="product-card__title">Beef burger</h3>
+                            <span class="product-card__price">
+                                6.99
+                                <span class="product-card__currency">
+                                    €
+                                </span>
+                            </span>
+                            <button class="btn btn--product" type="button">Add to cart</button>
+                        </article>
+                    </li>
+                    <li class="category__item mix category-d">
+                        <article class="product-card">
+                            <img class="product-card__img" src="./images/catalog/item_03.jpg"
+                                alt="Royal cheeseburger with cheddar cheese, a large beef patty, onions, pickles, mustard and ketchup on a caramelized bun with sesame"
+                                width="140" height="140">
+                            <h3 class="product-card__title">Royal cheeseburger</h3>
+                            <span class="product-card__price">
+                                5
+                                <span class="product-card__currency">
+                                    €
+                                </span>
+                            </span>
+                            <button class="btn btn--product" type="button">Add to cart</button>
+                        </article>
+                    </li>
+                    <li class="category__item mix category-e">
+                        <article class="product-card">
+                            <img class="product-card__img" src="./images/catalog/item_04.jpg"
+                                alt="Black big hamburger with cheddar cheese, a large beef patty and paprika"
+                                width="140" height="140">
+                            <h3 class="product-card__title">Black hamburger</h3>
+                            <span class="product-card__price">
+                                8.55
+                                <span class="product-card__currency">
+                                    €
+                                </span>
+                            </span>
+                            <button class="btn btn--product" type="button">Add to cart</button>
+                        </article>
+                    </li>
+                    <li class="category__item mix category-c">
+                        <article class="product-card">
+                            <img class="product-card__img" src="./images/catalog/item_05.jpg"
+                                alt="Crispy chicken burger with honey mustard coleslaw" width="140" height="140">
+                            <h3 class="product-card__title">Chicken burger</h3>
+                            <span class="product-card__price">
+                                2
+                                <span class="product-card__currency">
+                                    €
+                                </span>
+                            </span>
+                            <button class="btn btn--product" type="button">Add to cart</button>
+                        </article>
+                    </li>
+                </ul>
+                <a class="global-link " href="#">Show more</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__top">
+                <div class="footer__sub">
+                    <a class="logo footer__logo" href="#">
+                        <img class="logo__img" src="./images/logo.svg" alt="food delivery company Simple Food"
+                            width="200" height="39">
+                    </a>
+                    <form class="sub-form">
+                        <label class="sub-form__caption">
+                            <span class="sr-only">Please, enter your email to subscribe</span>
+                            <input class="sub-form__input" type="email" name="email" placeholder="Your email" required>
+                        </label>
+                        <button class="footer__btn btn" type="submit">
+                            <svg class="footer__btn-icon" width="15" height="14">
+                                <use href="./images/symbol-defs.svg#icon-send"></use>
+                            </svg>
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+                <ul class="footer__top-list">
+                    <li class="footer__top-item">
+                        <a class="footer__top-link" href="#">
+                            How it works
+                        </a>
+                    </li>
+                    <li class="footer__top-item">
+                        <a class="footer__top-link" href="#">
+                            product-cards
+                        </a>
+                    </li>
+                    <li class="footer__top-item">
+                        <a class="footer__top-link" href="#">
+                            Dishes
+                        </a>
+                    </li>
+                    <li class="footer__top-item">
+                        <a class="footer__top-link" href="#">
+                            Menu
+                        </a>
+                    </li>
+                    <li class="footer__top-item">
+                        <a class="footer__top-link" href="#">
+                            About us
+                        </a>
+                    </li>
+                    <li class="footer__top-item">
+                        <a class="footer__top-link" href="#">
+                            News
+                        </a>
+                    </li>
+                    <li class="footer__top-item">
+                        <a class="footer__top-link" href="#">
+                            Partners
+                        </a>
+                    </li>
+                    <li class="footer__top-item">
+                        <a class="footer__top-link" href="#">
+                            FAQ
+                        </a>
+                    </li>
+                    <li class="footer__top-item">
+                        <a class="footer__top-link" href="#">
+                            Dowload app
+                        </a>
+                    </li>
+                    <li class="footer__top-item">
+                        <a class="footer__top-link" href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="footer__top-item">
+                        <a class="footer__top-link" href="#">
+                            What's new
+                        </a>
+                    </li>
+                    <li class="footer__top-item">
+                        <a class="footer__top-link" href="#">
+                            Site map
+                        </a>
+                    </li>
+                </ul>
+                <address class="address">
+                    <ul class="address__list">
+                        <li class="address__item">
+                            <a class="address__link" href="#">
+                                <svg class="address__icon" width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#icon-location"></use>
+                                </svg>
+                                str. Marion Drive
+                            </a>
+                        </li>
+                        <li class="address__item">
+                            <a class="address__link" href="tel:+380501112233">
+                                <svg class="address__icon" width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#icon-calling"></use>
+                                </svg>
+                                380501112233
+                            </a>
+                        </li>
+                        <li class="address__item">
+                            <a class="address__link" href="mailto:support@sfood.com">
+                                <svg class="address__icon" width="24" height="24">
+                                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                                </svg>
+                                support@sfood.com
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__social">
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#">
+                                <svg class="footer-top__icon" width="10" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                                <span class="sr-only">
+                                    Visit Simple food facebook account
+                                </span>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#">
+                                <svg class="footer-top__icon" width="20" height="17">
+                                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                                <span class="sr-only">
+                                    Visit Simple food twitter account
+                                </span>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#">
+                                <svg class="footer-top__icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-insta"></use>
+                                </svg>
+                                <span class="sr-only">
+                                    Visit Simple food instagram account
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <p class="footer__bottom">
+                &copy; <span id="date"></span> Simple food
+            </p>
+        </div>
+    </footer>
+    <script src="./js/main.min.js"></script>
+</body>
+
+
+</html>

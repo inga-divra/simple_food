@@ -8,8 +8,11 @@
     }
 
     &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: calc(80vh - 159px);
         width: 100%;
-        padding: 156px 0;
         background-repeat: no-repeat;
         background-position: right center;
         background-size: contain;

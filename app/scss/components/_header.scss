@@ -1,12 +1,12 @@
 .header {
-    padding: 69px 0;
+    padding: 60px 0;
+
 
     &__container {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
     }
-
 }
 
 .menu {
@@ -35,6 +35,26 @@
             color: $orange-900;
         }
     }
+}
+
+.menu.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 15px;
+    z-index: 999;
+}
+
+.menu.fixed::after {
+    content: '';
+    position: absolute;
+    background-color: rgba($silver-100, 0.9);
+    top: 0;
+    left: -150%;
+    width: 400%;
+    height: 100%;
+    z-index: -1;
 }
 
 .logo {

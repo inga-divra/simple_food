@@ -19,7 +19,6 @@
     &__top {
         display: flex;
         padding-bottom: 65px;
-        //border-bottom: 1px solid rgba($gray, 0.2);
 
         &__icon {
             fill: $dark;
@@ -73,6 +72,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    &__line {
+        margin-left: -200%;
+        width: 500%;
+        height: 1px;
+        background-color: rgba($gray, 0.2);
     }
 }
 

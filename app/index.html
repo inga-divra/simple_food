@@ -39,13 +39,13 @@
                 </ul>
             </nav>
             <div class="user-nav">
-                <span class="sr-only">type to search for a product-card</span>
-                <button class="user-nav__link" href="#" type="button">
-                    <svg class="user-nav__icon" width="19" height="19">
+                <button class="user-nav__btn" type="button">
+                    <span class="sr-only">type to search for a product</span>
+                    <svg class="user-nav__icon" width="24" height="24">
                         <use href="./images/symbol-defs.svg#icon-search"></use>
                     </svg>
                 </button>
-                <button class="user-nav__link" href="#" type="button">
+                <button class="user-nav__btn" type="button">
                     <span class="sr-only">go to your shopping cart</span>
                     <svg class="user-nav__icon" width="19" height="19">
                         <use href="./images/symbol-defs.svg#icon-cart"></use>
@@ -56,10 +56,10 @@
         </div>
     </header>
     <main class="main">
+        <h1 class="sr-only">Fresh meals quickly delivered to you - Simple Food delivery</h1>
         <section class="hero section">
             <div class="container hero__container">
                 <div class="hero__content" style="background-image: url('./images/scooter-guy.jpg');">
-                    <h1 class="sr-only">Fresh meals quickly delivered to you - Simple Food delivery</h1>
                     <h2 class="hero__title">Delevery
                         <span class="hero__subtitle">in 15 minutes</span>
                     </h2>
@@ -300,12 +300,12 @@
                     </li>
                     <li class="footer__top-item">
                         <a class="footer__top-link" href="#">
-                            product-cards
+                            Products
                         </a>
                     </li>
                     <li class="footer__top-item">
                         <a class="footer__top-link" href="#">
-                            Dishes
+                            Meals
                         </a>
                     </li>
                     <li class="footer__top-item">
@@ -415,11 +415,10 @@
                     </ul>
                 </address>
             </div>
-            <div class="footer__line"></div>
-            <p class="footer__bottom">
-                &copy; <span id="date"></span> Simple food
-            </p>
         </div>
+        <p class="footer__bottom">
+            &copy; <span id="date"></span> Simple food
+        </p>
     </footer>
     <script src="./js/main.min.js"></script>
 </body>

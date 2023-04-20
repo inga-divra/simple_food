@@ -30,15 +30,24 @@
     }
 
     &__link {
+        transition: color 0.4s, border-color 0.4s, text-shadow 0.4s;
 
         &.current {
             color: $orange-900;
         }
-    }
-}
 
-.logo {
-    display: block;
+        &:hover {
+            color: $orange-900;
+        }
+
+        &:focus {
+            border-color: rgba($orange-900, 0.7);
+        }
+
+        &:active {
+            text-shadow: 2px 2px 5px rgba($dark, 0.5);
+        }
+    }
 }
 
 .user-nav {
@@ -51,6 +60,42 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: background-color 0.4s, border-color 0.4s;
+
+        &:hover {
+            background-color: $orange-light;
+
+            .user-nav__icon {
+                stroke: $neutral;
+            }
+
+            .user-nav__number {
+                background-color: $neutral;
+                color: $orange-light;
+            }
+        }
+
+        &:focus,
+        &:active {
+            background-color: rgba($orange-light, 0.1);
+
+            .user-nav__icon {
+                stroke: $darkBlue-900;
+            }
+
+            .user-nav__number {
+                background-color: $orange-900;
+                color: $neutral;
+            }
+        }
+
+        &:focus {
+            border-color: rgba($orange-900, 0.7);
+        }
+
+        &:active {
+            border-color: transparent;
+        }
 
         &:not(:last-child) {
             margin-right: 10px;
@@ -60,6 +105,7 @@
     &__icon {
         fill: transparent;
         stroke: $darkBlue-900;
+        transition: stroke 0.4s;
     }
 
     &__number {
@@ -74,5 +120,7 @@
         right: 5px;
         text-align: center;
         line-height: 14px;
+        transition: background-color 0.3s, color 0.3s;
     }
+
 }

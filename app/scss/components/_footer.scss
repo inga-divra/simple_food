@@ -20,21 +20,16 @@
         display: flex;
         justify-content: space-between;
         padding-bottom: 65px;
-
-        &__icon {
-            fill: $dark;
-        }
-
     }
 
-    &__top-list {
+    &__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 70px;
         margin-right: 74px;
     }
 
-    &__top-item {
+    &__item {
         font-size: 18px;
         letter-spacing: 0.01em;
 
@@ -51,31 +46,6 @@
         text-align: center;
         border: 1px solid rgba($gray, 0.2);
     }
-
-    &__social {
-        display: flex;
-    }
-
-    &__social-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 39px;
-        height: 39px;
-        background-color: $silver-200;
-        border-radius: 50%;
-
-        &:not(:last-child) {
-            margin-right: 13px;
-        }
-    }
-
-    &__social-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
 }
 
 .sub-form {
@@ -129,5 +99,34 @@
         fill: transparent;
         stroke: $dark;
         margin-right: 10px;
+    }
+}
+
+.social {
+    display: flex;
+
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 39px;
+        height: 39px;
+        background-color: $silver-200;
+        border-radius: 50%;
+
+        &:not(:last-child) {
+            margin-right: 13px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+        fill: $dark;
     }
 }

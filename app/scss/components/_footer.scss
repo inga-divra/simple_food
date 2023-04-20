@@ -18,8 +18,8 @@
 
     &__top {
         display: flex;
+        justify-content: space-between;
         padding-bottom: 65px;
-        //border-bottom: 1px solid rgba($gray, 0.2);
 
         &__icon {
             fill: $dark;
@@ -49,6 +49,7 @@
         line-height: 1;
         text-transform: capitalize;
         text-align: center;
+        border: 1px solid rgba($gray, 0.2);
     }
 
     &__social {
@@ -74,6 +75,7 @@
         justify-content: center;
         align-items: center;
     }
+
 }
 
 .sub-form {
@@ -102,6 +104,8 @@
 }
 
 .address {
+    max-width: 213px;
+    width: 100%;
 
     &__list {
         margin-bottom: 15px;

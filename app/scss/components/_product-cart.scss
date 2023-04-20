@@ -24,7 +24,7 @@
     &__price,
     &__currency {
         color: $darkBlue-900;
-        @extend %rubik-500;
+        font-weight: 500;
         line-height: 1.4;
         margin-bottom: 10px;
     }

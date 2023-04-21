@@ -30,35 +30,24 @@
     }
 
     &__link {
+        transition: color 0.4s, border-color 0.4s, text-shadow 0.4s;
 
         &.current {
             color: $orange-900;
         }
+
+        &:hover {
+            color: $orange-900;
+        }
+
+        &:focus {
+            border-color: rgba($orange-900, 0.7);
+        }
+
+        &:active {
+            text-shadow: 2px 2px 5px rgba($dark, 0.5);
+        }
     }
-}
-
-.menu.fixed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    max-width: 1200px;
-    padding: 40px 15px;
-    z-index: 999;
-}
-
-.menu.fixed::after {
-    content: '';
-    position: absolute;
-    background-color: rgba($silver-100, 0.9);
-    top: 0;
-    left: -150%;
-    width: 400%;
-    height: 100%;
-    z-index: -1;
-}
-
-.logo {
-    display: block;
 }
 
 .user-nav {
@@ -71,7 +60,42 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid red;
+        transition: background-color 0.4s, border-color 0.4s;
+
+        &:hover {
+            background-color: $orange-light;
+
+            .user-nav__icon {
+                stroke: $neutral;
+            }
+
+            .user-nav__number {
+                background-color: $neutral;
+                color: $orange-light;
+            }
+        }
+
+        &:focus,
+        &:active {
+            background-color: rgba($orange-light, 0.1);
+
+            .user-nav__icon {
+                stroke: $darkBlue-900;
+            }
+
+            .user-nav__number {
+                background-color: $orange-900;
+                color: $neutral;
+            }
+        }
+
+        &:focus {
+            border-color: rgba($orange-900, 0.7);
+        }
+
+        &:active {
+            border-color: transparent;
+        }
 
         &:not(:last-child) {
             margin-right: 10px;
@@ -81,6 +105,7 @@
     &__icon {
         fill: transparent;
         stroke: $darkBlue-900;
+        transition: stroke 0.4s;
     }
 
     &__number {
@@ -91,9 +116,11 @@
         color: $neutral;
         border-radius: 50%;
         font-size: 10px;
-        top: -4px;
-        right: 0px;
+        top: 6px;
+        right: 5px;
         text-align: center;
         line-height: 14px;
+        transition: background-color 0.3s, color 0.3s;
     }
+
 }

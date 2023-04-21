@@ -1,40 +1,52 @@
 .footer {
 
     &__logo {
+        display: inline-block;
         margin-bottom: 30px;
     }
 
     &__btn {
         display: flex;
         align-items: center;
+        border-radius: 5px;
         width: 200px;
         padding: 13px 38px;
+
+        &:hover,
+        &:focus,
+        &:active {
+
+            .footer__btn-icon {
+                fill: $orange-900;
+            }
+        }
+
+        &:hover {
+            box-shadow: none;
+            background-color: $neutral;
+        }
+
     }
 
     &__btn-icon {
         fill: $neutral;
         margin-right: 16px;
+        transition: fill 0.4s;
     }
 
     &__top {
         display: flex;
-        justify-content: space-between;
         padding-bottom: 65px;
-
-        &__icon {
-            fill: $dark;
-        }
-
     }
 
-    &__top-list {
+    &__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 70px;
-        margin-right: 74px;
+        margin-right: 75px;
     }
 
-    &__top-item {
+    &__item {
         font-size: 18px;
         letter-spacing: 0.01em;
 
@@ -49,33 +61,8 @@
         line-height: 1;
         text-transform: capitalize;
         text-align: center;
-        border: 1px solid rgba($gray, 0.2);
+        border-top: 1px solid rgba($gray, 0.2);
     }
-
-    &__social {
-        display: flex;
-    }
-
-    &__social-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 39px;
-        height: 39px;
-        background-color: $silver-200;
-        border-radius: 50%;
-
-        &:not(:last-child) {
-            margin-right: 13px;
-        }
-    }
-
-    &__social-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
 }
 
 .sub-form {
@@ -95,16 +82,30 @@
         border: 1px solid $gray;
         border-radius: 5px;
         outline: transparent;
+        transition: outline 0.3s, opacity 0.4s;
 
         &::placeholder {
             color: rgba($gray, 0.9);
             font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        &:hover::placeholder {
+            color: $darkBlue-900;
+        }
+
+        &:focus {
+            outline: 2px solid $orange-900;
+        }
+
+        &:active {
+            opacity: 0.6;
         }
     }
 }
 
 .address {
-    max-width: 213px;
+    max-width: 259px;
     width: 100%;
 
     &__list {
@@ -121,13 +122,93 @@
     }
 
     &__link {
-        display: flex;
-        align-items: flex-end;
+        display: inline-flex;
+        align-items: flex-start;
+        border-radius: 5px;
+        transition: color 0.4, outline 0.3s, opacity 0.4s;
+
+        &:hover {
+            color: $orange-900;
+
+            .address__icon {
+                stroke: $orange-900;
+            }
+        }
+
+        &:focus {
+            color: $darkBlue-900;
+            outline: 2px solid $orange-light;
+
+            .address__icon {
+                stroke: $darkBlue-900;
+            }
+        }
+
+        &:active {
+            opacity: 0.7;
+        }
     }
 
     &__icon {
         fill: transparent;
         stroke: $dark;
-        margin-right: 10px;
+        transition: stroke 0.3s;
+    }
+}
+
+.social {
+    display: flex;
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-right: 13px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 39px;
+        height: 39px;
+        background-color: $silver-200;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        text-decoration: none;
+        transition: background-color 0.3s, border-color 0.3s;
+
+        &:hover {
+            background-color: $orange-light;
+
+            .social__icon {
+                fill: $neutral;
+            }
+        }
+
+        &:focus,
+        &:active {
+            background-color: $orange-veryLight;
+        }
+
+        &:focus {
+            border-color: rgba($orange-900, 0.7);
+
+            .social__icon {
+                fill: $dark;
+            }
+        }
+
+        &:active {
+
+            .social__icon {
+                fill: $orange-light;
+            }
+        }
+    }
+
+    &__icon {
+        fill: $dark;
+        transition: fill 0.3s;
     }
 }

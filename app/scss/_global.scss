@@ -31,30 +31,98 @@ body {
 
 .logo {
     display: block;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: color 0.4s, opacity 0.3s, border-color 0.4s;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:focus {
+        border-color: rgba($orange-900, 0.7);
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+.logo,
+.menu__link,
+.user-nav__btn,
+.btn,
+.global-link {
+    border: 2px solid transparent;
+    border-radius: 5px;
 }
 
 .global-link {
     color: $darkBlue-900;
     text-decoration: underline;
+    transition: color 0.4s, border-color 0.4s, text-shadow 0.4s;
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: $orange-900;
+    }
+
+    &:focus {
+        border-color: rgba($orange-900, 0.7);
+    }
+
+    &:active {
+        text-shadow: 2px 2px 5px rgba(54, 56, 83, 0.5);
+    }
 }
 
 .btn {
     color: $neutral;
     background-color: $orange-900;
     border-radius: 6px;
+    border: 2px solid transparent;
     font-size: 14px;
     padding: 7px 16px;
+    transition: background-color 0.4s, color 0.4s, box-shadow 0.3s;
 
+    &:hover,
+    &:focus,
+    &:active {
+        color: $orange-900;
+    }
+
+    &:focus,
+    &:active {
+        background-color: rgba($orange-light, 0.1);
+    }
+
+    &:hover,
+    &:focus {
+        border-color: rgba($orange-900, 0.7);
+    }
+
+    &:hover {
+        background-color: rgba($neutral, 0.1);
+        box-shadow: 0px 5px 12px rgba(255, 104, 56, 0.2);
+    }
+
+    &:active {
+        border-color: transparent;
+    }
 
     &--big {
         font-size: 18px;
         padding: 12px 32px;
     }
-
 }
 
 .title {
-    @extend %rubik-500;
+    font-weight: 500;
     font-size: 36px;
     text-align: center;
     margin-bottom: 60px;

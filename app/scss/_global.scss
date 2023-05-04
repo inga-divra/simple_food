@@ -48,18 +48,11 @@ body {
     }
 }
 
-.logo,
-.menu__link,
-.user-nav__btn,
-.btn,
-.global-link {
-    border: 2px solid transparent;
-    border-radius: 5px;
-}
-
 .global-link {
     color: $darkBlue-900;
     text-decoration: underline;
+    border: 2px solid transparent;
+    border-radius: 5px;
     transition: color 0.4s, border-color 0.4s, text-shadow 0.4s;
 
     &:hover,

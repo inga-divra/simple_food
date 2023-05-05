@@ -33,11 +33,22 @@
     }
 
     &__item {
+        display: flex;
+        align-items: center;
         font-size: 24px;
         color: $darkBlue-900;
 
         &:not(:last-child) {
             margin-bottom: 20px;
         }
+    }
+
+    &__icon {
+        margin-right: 30px;
+    }
+
+    &__btn {
+        font-size: 18px;
+        padding: 12px 32px;
     }
 }

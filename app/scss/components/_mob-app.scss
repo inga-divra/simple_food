@@ -1,0 +1,37 @@
+.mob-app {
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__content {
+        max-width: 538px;
+        margin-bottom: 62px;
+    }
+
+    &__title {
+        text-align: left;
+        margin-bottom: 45px;
+    }
+
+    &__desc {
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__img {
+        height: 380px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: contain;
+    }
+}

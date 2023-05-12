@@ -1,9 +1,9 @@
 .category {
-    padding-top: 0;
     text-align: center;
 
     &__filter {
         display: flex;
+        justify-content: center;
         margin-bottom: 45px;
     }
 

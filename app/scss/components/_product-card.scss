@@ -1,4 +1,5 @@
 .product-card {
+    position: relative;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -12,27 +13,78 @@
     border: 1px solid transparent;
     border-radius: 5px;
     transition: border-color 0.4s, opacity 0.4s;
+    z-index: 2;
+
+    &__link {
+        color: $orange-900;
+        background-color: $neutral;
+        border-radius: 6px;
+        border: 2px solid $orange-light;
+        padding: 7px 16px;
+        position: relative;
+        bottom: -64px;
+        opacity: 0;
+        transition: opacity 0.3s, bottom 0.3s;
+        text-align: center;
+        z-index: 2;
+
+        &:hover {
+            color: $neutral;
+            background-color: rgba($orange-900, 0.6);
+        }
+
+        &:focus {
+            border-color: $orange-900;
+        }
+
+        &:active {
+            color: $dark;
+            background-color: $neutral;
+        }
+    }
 
     &:hover {
         border-color: $orange-900;
+
+        .product-card__link {
+            bottom: -48px;
+            opacity: 1;
+        }
+
+        .product-card__img {
+            transform: rotate(15deg);
+        }
+
+        .product-card__overlay {
+            opacity: 1;
+        }
     }
 
     &:focus {
-        opacity: 0.8;
+
+        .product-card__img {
+            transform: rotate(0);
+        }
+
     }
 
     &:active {
-        opacity: 0.5;
+
+        .product-card__img {
+            transform: rotate(-15deg);
+        }
     }
 
     &__img {
         margin-bottom: 10px;
+        transition: transform 0.3s;
     }
 
     &__title {
         font-size: 15px;
         line-height: 1.2;
         margin-bottom: 10px;
+        z-index: 2;
     }
 
     &__price,
@@ -41,5 +93,24 @@
         font-weight: 500;
         line-height: 1.4;
         margin-bottom: 10px;
+        z-index: 2;
     }
+
+    &__overlay {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 6px;
+        position: absolute;
+        background-color: rgba($neutral, 0.2);
+        backdrop-filter: blur(3px);
+        opacity: 0;
+        z-index: 1;
+        transition: opacity 1s ease-in-out;
+    }
+}
+
+.btn--product {
+    z-index: 2;
 }

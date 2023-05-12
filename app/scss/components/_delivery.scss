@@ -1,0 +1,54 @@
+.delivery {
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        height: 585px;
+        width: 100%;
+        margin-right: 120px;
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: contain;
+    }
+
+    &__content {
+        max-width: 470px;
+    }
+
+    &__title {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        opacity: 0.9;
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        color: $darkBlue-900;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__icon {
+        margin-right: 30px;
+    }
+
+    &__btn {
+        font-size: 18px;
+        padding: 12px 32px;
+    }
+}

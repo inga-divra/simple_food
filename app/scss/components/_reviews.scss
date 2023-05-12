@@ -19,15 +19,35 @@
     }
 
     &__img {
-        margin-right: 40px;
+        margin-right: 80px;
         border-radius: 50%;
     }
 
 }
 
 .blockquote {
+    position: relative;
     display: flex;
     flex-direction: column;
+
+
+
+    &::before {
+        content: url('../../images/icons/left-quotes.svg');
+        position: absolute;
+        width: 24px;
+        height: 20px;
+        left: -46px;
+    }
+
+    &::after {
+        content: url('../../images/icons/right-quotes.svg');
+        position: absolute;
+        width: 24px;
+        height: 20px;
+        right: 0;
+        bottom: 80px;
+    }
 
     &__text {
         font-style: italic;

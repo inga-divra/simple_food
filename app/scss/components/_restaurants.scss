@@ -39,7 +39,7 @@
         text-transform: capitalize;
     }
 
-    &__info {
+    &__bottom {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -58,21 +58,29 @@
 
     &__link {
         display: flex;
-        padding: 5px 28px;
+        justify-content: center;
+        align-items: center;
+        width: 79px;
+        height: 33px;
+        background-color: $orange-900;
+        border: 2px solid transparent;
         border-radius: 20px;
 
         &:hover {
+            box-shadow: 0px 5px 12px rgba(255, 104, 56, 0.2);
 
             .restaurants__link-icon {
                 transform: translateX(5px);
             }
         }
 
-        &:hover,
-        &:focus,
-        &:active {
+        &:focus {
+            background-color: rgba($orange-light, 0.1);
+            border-color: rgba($orange-900, 0.7);
+
             .restaurants__link-icon {
                 fill: $orange-900;
+
             }
         }
 

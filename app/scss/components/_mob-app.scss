@@ -2,6 +2,7 @@
 
     &__container {
         display: flex;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -19,9 +20,17 @@
         margin-bottom: 30px;
     }
 
+    &__links {
+        display: flex;
+    }
+
     &__link {
-        display: inline-block;
         border-radius: 5px;
+        height: 40px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
 
         &:hover {
             opacity: 0.8;
@@ -42,8 +51,6 @@
     }
 
     &__img {
-        height: 380px;
-        width: 100%;
         background-repeat: no-repeat;
         background-position: right center;
         background-size: contain;

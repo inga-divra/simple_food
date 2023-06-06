@@ -5,17 +5,20 @@
         align-items: center;
     }
 
-    &__img {
+    &__inner {
+        display: flex;
+        align-items: center;
         height: 585px;
         width: 100%;
-        margin-right: 120px;
         background-repeat: no-repeat;
-        background-position: right center;
+        background-position: 20% center;
         background-size: contain;
     }
 
     &__content {
         max-width: 470px;
+        width: 100%;
+        margin-left: auto;
     }
 
     &__title {
@@ -47,8 +50,4 @@
         margin-right: 30px;
     }
 
-    &__btn {
-        font-size: 18px;
-        padding: 12px 32px;
-    }
 }

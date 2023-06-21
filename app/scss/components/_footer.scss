@@ -177,6 +177,7 @@
     }
 
     &__icon {
+        flex-shrink: 0;
         fill: transparent;
         stroke: $dark;
         margin-right: 7px;
@@ -186,6 +187,8 @@
 
 .social {
     display: flex;
+    flex-wrap: wrap;
+    gap: 13px 0px;
 
     &__item {
 

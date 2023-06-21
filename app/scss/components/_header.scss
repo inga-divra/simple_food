@@ -9,6 +9,10 @@
     }
 }
 
+.logo__img {
+    object-fit: contain;
+}
+
 .menu {
     display: flex;
     align-items: center;
@@ -113,15 +117,18 @@
     }
 
     &__number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
-        width: 14px;
-        height: 14px;
+        width: 17px;
+        height: 17px;
         background-color: $orange-900;
         color: $neutral;
         border-radius: 50%;
         font-size: 10px;
-        top: 6px;
-        right: 5px;
+        top: 3px;
+        right: -1px;
         text-align: center;
         line-height: 14px;
         transition: background-color 0.3s, color 0.3s;

@@ -7,7 +7,7 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 30px;
     }
 
@@ -22,11 +22,21 @@
         }
     }
 
+    &__item-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
     &__img {
+        object-fit: contain;
         border-radius: 10px 10px 0px 0px;
     }
 
     &__content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
         background-color: $neutral;
         padding: 15px 20px 23px;
         border-radius: 0 0 10px 10px;
@@ -34,9 +44,14 @@
     }
 
     &__name {
+        flex: 1;
         font-size: 24px;
         margin-bottom: 20px;
         text-transform: capitalize;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
     }
 
     &__bottom {

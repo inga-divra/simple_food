@@ -27,7 +27,7 @@
     &__link {
         border-radius: 5px;
         height: 40px;
-        width: 100%;
+        width: 135px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -51,6 +51,7 @@
     }
 
     &__img {
+        height: auto;
         background-repeat: no-repeat;
         background-position: right center;
         background-size: contain;

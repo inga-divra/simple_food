@@ -83,6 +83,11 @@
         font-size: 15px;
         line-height: 1.2;
         margin-bottom: 10px;
+        max-width: 300px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
     }
 
     &__price,

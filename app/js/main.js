@@ -6,6 +6,8 @@ $(function () {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    appendArrows: $('.reviews__arrows'),
+    appendDots: $('.reviews__dots'),
     prevArrow:
       '<button type="button" class="slick-arrow slick-prev"><svg class="slick-arrow__icon" width="11" height="19"><use href="./images/symbol-defs.svg#icon-arr"></use></svg><span class="sr-only">Go to the previous slide</span></button>',
     nextArrow:

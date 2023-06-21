@@ -1,17 +1,17 @@
 .hero {
 
-    &__content {
+    &__inner {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: calc(65vh - 164px);
-        width: 100%;
+        align-items: center;
+        height: 100%;
         background-repeat: no-repeat;
-        background-position: 90% center;
+        background-position: 87% center;
         background-size: contain;
     }
 
     &__title {
+        width: 100%;
+        max-width: 460px;
         color: $darkBlue-900;
         font-size: 66px;
         font-weight: 500;
